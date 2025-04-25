@@ -7,41 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
+<div class="container">
   <!-- Display -->
-  <input type="text" placeholder="0" id="display" readonly/>
+       <div class="displayArea">
+         <input type="text" placeholder="0" id="display" readonly/>
 
-  <!-- Calculator Buttons -->
-  <div class="button-row">
-    <button class="button" id="clear">C</button>
-    <button class="button" id="divide">/</button>
-    <button class="button" id="multiply">*</button>
-    <button class="button" id="modulus">%</button>
-  </div>
-  <div class="button-row">
-    <button class="button" id="7">7</button>
-    <button class="button" id="8">8</button>
-    <button class="button" id="9">9</button>
-    <button class="button" id="subtract">-</button>
-  </div>
-  <div class="button-row">
-    <button class="button" id="4">4</button>
-    <button class="button" id="5">5</button>
-    <button class="button" id="6">6</button>
-    <button class="button" id="add">+</button>
-  </div>
-  <div class="button-row">
-    <button class="button" id="1">1</button>
-    <button class="button" id="2">2</button>
-    <button class="button" id="3">3</button>
-    <button class="button" id="equals">=</button>
-  </div>
-  <div class="button-row">
-    <button class="button" id="0">0</button>
-    <button class="button" id="decimal">.</button>
-  </div>
+       </div>
+        <div class="button-container">
+            <!-- Calculator Buttons -->
+            <div class="button-row">
+                <button class="button" id="clear">C</button>
+                <button class="button operator" >/</button>
+                <button class="button operator" >*</button>
+                <button class="button operator" >%</button>
+            </div>
+        
+            <div class="button-row">
+                <button class="button operand" >7</button>
+                <button class="button operand" >8</button>
+                <button class="button operand" >9</button>
+                <button class="button operator">-</button>
+            </div>
+       
+            <div class="button-row">
+                <button class="button operand" >4</button>
+                <button class="button operand" >5</button>
+                <button class="button operand" >6</button>
+                <button class="button operator">+</button>
+            </div>
+        
+            <div class="button-row">
+                <button class="button operand" >1</button>
+                <button class="button operand" >2</button>
+                <button class="button operand" >3</button>
+                <button class="button operator" id="equals">=</button>
+            </div>
+        
+            <div class="button-row wide-zero-row">
+                <button class="button operand" id="zero" >0</button>
+                <button class="button operand" id="decimal" >.</button>
+            </div>
+        </div>
+       
 </div>
 
-  <script src="script.js"></script>  
+  <script src="script.js" defer></script>  
 </body>
 </html>
