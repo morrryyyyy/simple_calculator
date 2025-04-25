@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5; /* Light neutral background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Calculator Container */
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Display Area */
+#display {
+  font-size: 2em;
+  text-align: right;
+  background-color: #eaeaea;
+  border: none;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  color: #333;
+  width: 100%;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5em;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button.operator {
+  background-color: #2b124c; 
+  color: white;
+}
+
+.button.operand {
+  background-color: #dfb6b2;
+  color: #333;
+}
+
+.button.operator:hover {
+  background-color: #522b5b; /* Slightly darker orange on hover */
+}
+
+.button:hover {
+  background-color: #fbe4db;
+}
+
+/* Equal button special style */
+#equals {
+  background-color: #4caf50; /* Green for equals */
+  color: white;
+}
+
+#equals:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Clear button special style */
+#clear {
+  background-color: #f44336; /* Red for clear */
+  color: white;
+}
+
+#clear:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+.wide-zero-row {
+  display: flex;
+  gap: 10px;
+}
+
+/* 0 Button Styling */
+#zero{
+  flex: 3; /* Takes up 3/4 of the row */
+}
+
+/* Decimal Button Styling */
+#decimal {
+  flex: 1; /* Takes up 1/4 of the row */
+}
